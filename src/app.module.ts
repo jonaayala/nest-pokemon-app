@@ -28,7 +28,7 @@ import { JoiValidationSchema } from './config/joi.validation';
 
 
     
-    MongooseModule.forRoot( process.env.MONGODB!, {
+    MongooseModule.forRoot( process.env.MONGODB || '', {
       dbName: 'pokemonsdb'
     }),
     
